@@ -1,18 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            style="@style/TextFieldStyle"
+            android:text="@string/string_question_1" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion1Answer1"
+                android:text="@string/string_question_1_answer_1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion1Answer2"
+                android:text="@string/string_question_1_answer_2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion1Answer3"
+                android:text="@string/string_question_1_answer_3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion1Answer4"
+                android:text="@string/string_question_1_answer_4" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextFieldStyle"
+            android:text="@string/string_question_2" />
+
+        <EditText
+            android:id="@+id/question_2_answer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete" />
+
+        <TextView
+            style="@style/TextFieldStyle"
+            android:text="@string/string_question_3" />
+
+        <CheckBox
+            android:id="@+id/checkbox_question_3_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckQuestion3Answer1"
+            android:text="@string/string_question_3_answer_1" />
+
+        <CheckBox
+            android:id="@+id/checkbox_question_3_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckQuestion3Answer2"
+            android:text="@string/string_question_3_answer_2" />
+
+        <CheckBox
+            android:id="@+id/checkbox_question_3_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckQuestion3Answer3"
+            android:text="@string/string_question_3_answer_3" />
+
+        <CheckBox
+            android:id="@+id/checkbox_question_3_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckQuestion3Answer4"
+            android:text="@string/string_question_3_answer_4" />
+
+        <TextView
+            style="@style/TextFieldStyle"
+            android:text="@string/string_question_4" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion4Answer1"
+                android:text="@string/string_question_4_answer_1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion4Answer2"
+                android:text="@string/string_question_4_answer_2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion4Answer3"
+                android:text="@string/string_question_4_answer_3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioQuestion4Answer4"
+                android:text="@string/string_question_4_answer_4" />
+
+        </RadioGroup>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="gradeQuiz"
+            android:text="@string/string_grade" />
+
+    </LinearLayout>
+
+</ScrollView>

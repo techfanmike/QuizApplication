@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Quiz Application</string>
+    <string name="string_question_1">Where is Abraham Lincoln buried?</string>
+    <string name="string_question_1_answer_1">Springfield, Illinois</string>
+    <string name="string_question_1_answer_2">Frankfurt, Kentucky</string>
+    <string name="string_question_1_answer_3">Washington D. C.</string>
+    <string name="string_question_1_answer_4">Hodgenville, Kentucky</string>
+    <string name="string_question_2">What State was Abraham Lincoln born in?</string>
+    <string name="string_question_3">Which of the following is true about Abraham Lincoln?</string>
+    <string name="string_question_3_answer_1">First U.S. President to be assassinated</string>
+    <string name="string_question_3_answer_2">met Harriet Beecher Stowe</string>
+    <string name="string_question_3_answer_3">Vampire Hunter</string>
+    <string name="string_question_3_answer_4">Wrote the Gettysburg Address on the back of an envelope</string>
+    <string name="string_question_4">What year was Abraham Lincoln inaugurated?</string>
+    <string name="string_question_4_answer_1">1776</string>
+    <string name="string_question_4_answer_2">1856</string>
+    <string name="string_question_4_answer_3">1861</string>
+    <string name="string_question_4_answer_4">1865</string>
+    <string name="string_grade">Grade the Quiz</string>
 </resources>
