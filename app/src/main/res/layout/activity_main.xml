@@ -18,26 +18,22 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion1Answer1"
                 android:text="@string/string_question_1_answer_1" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion1Answer2"
                 android:text="@string/string_question_1_answer_2" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion1Answer3"
                 android:text="@string/string_question_1_answer_3" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion1Answer4"
                 android:text="@string/string_question_1_answer_4" />
         </RadioGroup>
@@ -58,29 +54,25 @@
 
         <CheckBox
             android:id="@+id/checkbox_question_3_answer_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckStyle"
             android:onClick="onCheckQuestion3Answer1"
             android:text="@string/string_question_3_answer_1" />
 
         <CheckBox
             android:id="@+id/checkbox_question_3_answer_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckStyle"
             android:onClick="onCheckQuestion3Answer2"
             android:text="@string/string_question_3_answer_2" />
 
         <CheckBox
             android:id="@+id/checkbox_question_3_answer_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckStyle"
             android:onClick="onCheckQuestion3Answer3"
             android:text="@string/string_question_3_answer_3" />
 
         <CheckBox
             android:id="@+id/checkbox_question_3_answer_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckStyle"
             android:onClick="onCheckQuestion3Answer4"
             android:text="@string/string_question_3_answer_4" />
 
@@ -93,26 +85,22 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion4Answer1"
                 android:text="@string/string_question_4_answer_1" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion4Answer2"
                 android:text="@string/string_question_4_answer_2" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion4Answer3"
                 android:text="@string/string_question_4_answer_3" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:onClick="onRadioQuestion4Answer4"
                 android:text="@string/string_question_4_answer_4" />
 
