@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_LONG;
         EditText simpleEditText = (EditText) findViewById(R.id.question_2_answer);
+        CharSequence text;
 
         // get the edit box answer, and trim whitespace.  Autocomplete
         // likes to add a trailing space
@@ -99,7 +100,14 @@ public class MainActivity extends AppCompatActivity {
         if(question4Answer == 3) numberCorrect.getAndIncrement();
 
         // build a toast string and display the toast
-        CharSequence text = "Number Correct:  " + numberCorrect;
+        if(numberCorrect.get() == 4)
+        {
+            text = "Perfect Score - Number Correct:  " + numberCorrect;
+        }
+        else
+        {
+            text = "Number Correct:  " + numberCorrect;;
+        }
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
