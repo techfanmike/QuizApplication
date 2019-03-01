@@ -6,6 +6,8 @@
     <string name="string_question_1_answer_3">Washington D. C.</string>
     <string name="string_question_1_answer_4">Hodgenville, Kentucky</string>
     <string name="string_question_2">What State was Abraham Lincoln born in?</string>
+    <string name="string_question_2_answer_hint">State</string>
+    <string name="string_question_2_answer">kentucky</string>
     <string name="string_question_3">Which of the following is true about Abraham Lincoln?</string>
     <string name="string_question_3_answer_1">First U.S. President to be assassinated</string>
     <string name="string_question_3_answer_2">met Harriet Beecher Stowe</string>

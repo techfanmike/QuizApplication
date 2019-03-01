@@ -12,6 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class MainActivity extends AppCompatActivity {
 
+    // define variables. Most hold the state of the answers
     int question1Answer = 0;
     boolean question3Answer1 = false;
     boolean question3Answer2 = false;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // this group of callbacks handles question 1 answers
     public void onRadioQuestion1Answer1(View v){
         question1Answer = 1;
     }
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         question1Answer = 4;
     }
 
+    // this group of callbacks handles question 3 checkboxes
+    // need to read the checkbox state to set the boolean
     public void onCheckQuestion3Answer1(View v){
         question3Answer1 = ((CheckBox) v).isChecked();
     }
@@ -57,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         question3Answer4 = ((CheckBox) v).isChecked();
     }
 
+    // this group of callbacks handles question 4 answers
     public void onRadioQuestion4Answer1(View v){
         question4Answer = 1;
     }
@@ -78,9 +83,14 @@ public class MainActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_LONG;
         EditText simpleEditText = (EditText) findViewById(R.id.question_2_answer);
-        String strValue = simpleEditText.getText().toString();
 
-        if(strValue.equalsIgnoreCase("kentucky") ) numberCorrect.getAndIncrement();
+        // get the edit box answer, and trim whitespace.  Autocomplete
+        // likes to add a trailing space
+        String strValue = simpleEditText.getText().toString();
+        String strValueTrimmed = strValue.trim();
+
+        // check each question, and increment number correct for each correct.
+        if(strValueTrimmed.equalsIgnoreCase(getResources().getString(R.string.string_question_2_answer)) ) numberCorrect.getAndIncrement();
         if(question1Answer == 1) numberCorrect.getAndIncrement();
         if(question3Answer1 &&
             question3Answer2 &&
@@ -88,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
             !question3Answer4) numberCorrect.getAndIncrement();
         if(question4Answer == 3) numberCorrect.getAndIncrement();
 
+        // build a toast string and display the toast
         CharSequence text = "Number Correct:  " + numberCorrect;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
