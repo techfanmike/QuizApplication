@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gradeQuiz(View v) {
-        AtomicInteger numberCorrect = new AtomicInteger();
+        int numberCorrect = 0;
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_LONG;
         EditText simpleEditText = (EditText) findViewById(R.id.question_2_answer);
@@ -91,16 +91,16 @@ public class MainActivity extends AppCompatActivity {
         String strValueTrimmed = strValue.trim();
 
         // check each question, and increment number correct for each correct.
-        if(strValueTrimmed.equalsIgnoreCase(getResources().getString(R.string.string_question_2_answer)) ) numberCorrect.getAndIncrement();
-        if(question1Answer == 1) numberCorrect.getAndIncrement();
+        if(strValueTrimmed.equalsIgnoreCase(getResources().getString(R.string.string_question_2_answer)) ) numberCorrect++;
+        if(question1Answer == 1) numberCorrect++;
         if(question3Answer1 &&
             question3Answer2 &&
             !question3Answer3 &&
-            !question3Answer4) numberCorrect.getAndIncrement();
-        if(question4Answer == 3) numberCorrect.getAndIncrement();
+            !question3Answer4) numberCorrect++;
+        if(question4Answer == 3) numberCorrect++;
 
         // build a toast string and display the toast
-        if(numberCorrect.get() == 4)
+        if(numberCorrect == 4)
         {
             text = "Perfect Score - Number Correct:  " + numberCorrect;
         }
